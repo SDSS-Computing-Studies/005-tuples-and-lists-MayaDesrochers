@@ -22,15 +22,22 @@ Enter a word from the list:orange
 word not in list
 ['apple', 'cherry', 'kiwi', 'apple', 'banana', 'strawberry', 'kiwi', 'blueberry', 'kiwi', 'orange']
 
+input a word
+if the word appears
+    count how many times that word appears
+    delete the word that many times
+else
+    add the word to the list
 """
 
 fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry","kiwi"]
 item=(input("Enter a word from the list:").strip())
 
+
 if item in fruit:
     num=fruit.count(item)
     
-    for num in range(0,9):
+    for count in range(0,num):
 
         fruit.remove(item)
         print(fruit)
