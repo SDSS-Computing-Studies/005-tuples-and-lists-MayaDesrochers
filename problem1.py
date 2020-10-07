@@ -17,5 +17,14 @@ example:
 Choose a person from the list to replace:Rick
 Enter the replacement:Dan
 ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Dan']
-
 """
+
+people=["Alain","Brian","Chris","Justin","Angela","Rick"]
+
+name=input("Choose a person from the list to replace:")
+newname=input("Enter the replacement:")
+index=people.index(name)
+people.remove(name)
+people.insert(index,newname)
+print(people)
+
