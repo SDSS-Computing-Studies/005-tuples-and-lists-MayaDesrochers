@@ -40,6 +40,7 @@ if item in fruit:
     for count in range(0,num):
 
         fruit.remove(item)
+        
         print(fruit)
 else:
     fruit.append(item)

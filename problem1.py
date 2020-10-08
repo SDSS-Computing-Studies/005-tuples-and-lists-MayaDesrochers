@@ -21,8 +21,8 @@ Enter the replacement:Dan
 
 people=["Alain","Brian","Chris","Justin","Angela","Rick"]
 
-name=input("Choose a person from the list to replace:")
-newname=input("Enter the replacement:")
+name=(input("Choose a person from the list to replace:").strip())
+newname=(input("Enter the replacement:").strip())
 index=people.index(name)
 people.remove(name)
 people.insert(index,newname)
