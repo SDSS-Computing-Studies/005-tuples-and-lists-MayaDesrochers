@@ -26,12 +26,40 @@ The largest number you entered is 92
 
 
 numList=[]
-number=input("Enter an integer:")
-numList.append(number)
-for number in numList:
-        if number==-1:
-                break 
-                print("End")
+number=""
+number=input("Enter number:")
+number=int(number)
+
+while (number < -1) or (number > -1):
+    number=input("Enter number:")
+    number=int(number)
+    numList.append(number) 
+    if number==-1:
+        numList.sort()
+        c=len(numList)
+        index=str(numList[c-1])
+        print("The largest number you entered was"+ " "+index+"")
+        
+
+
+
+
+
+    
+    
+    
+
+            
+
+   
+        
+
+    
+
+
+
+  
+             
 
         
        
